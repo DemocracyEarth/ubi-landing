@@ -1,0 +1,482 @@
+<!DOCTYPE html><!--  This site was created in Webflow. https://www.webflow.com  -->
+<!--  Last Published: Thu Sep 08 2022 10:33:16 GMT+0000 (Coordinated Universal Time)  -->
+<html data-wf-page="6315f6908497f059419e84df" data-wf-site="6315f68f8497f0d90e9e84a8">
+<head>
+  <meta charset="utf-8">
+  <title>UBI — Universal Basic Income for Humanity</title>
+  <meta content="UBI 💧 is a cryptocurrency that streams to every human verified with Proof of Humanity on Ethereum." name="description">
+  <meta content="UBI — Universal Basic Income for Humanity" property="og:title">
+  <meta content="UBI 💧 is a cryptocurrency that streams to every human verified with Proof of Humanity on Ethereum." property="og:description">
+  <meta content="https://democracyearth.s3.us-west-2.amazonaws.com/ubi-open-graph-image.png" property="og:image">
+  <meta content="UBI — Universal Basic Income for Humanity" property="twitter:title">
+  <meta content="UBI 💧 is a cryptocurrency that streams to every human verified with Proof of Humanity on Ethereum." property="twitter:description">
+  <meta content="https://democracyearth.s3.us-west-2.amazonaws.com/ubi-open-graph-image.png" property="twitter:image">
+  <meta property="og:type" content="website">
+  <meta content="summary_large_image" name="twitter:card">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="Webflow" name="generator">
+  <link href="css/normalize.css" rel="stylesheet" type="text/css">
+  <link href="css/webflow.css" rel="stylesheet" type="text/css">
+  <link href="css/ubi-eth.webflow.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+  <script type="text/javascript">WebFont.load({  google: {    families: ["DM Sans:regular,italic,500,500italic,700,700italic"]  }});</script>
+  <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+  <script type="text/javascript">!function(o,c){var n=c.documentElement,t=" w-mod-";n.className+=t+"js",("ontouchstart"in o||o.DocumentTouch&&c instanceof DocumentTouch)&&(n.className+=t+"touch")}(window,document);</script>
+  <link href="images/favicon.webp" rel="shortcut icon" type="image/x-icon">
+  <link href="images/webclip.png" rel="apple-touch-icon">
+  <style>
+* {
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+  <script>
+function addToMetamask() {
+const tokenAddress = '0xDd1Ad9A21Ce722C151A836373baBe42c868cE9a4';
+const tokenSymbol = 'UBI';
+const tokenDecimals = 18;
+const tokenImage = 'https://etherscan.io/token/images/universalbasicincome_32.png';
+  try {
+    // wasAdded is a boolean. Like any RPC method, an error may be thrown.
+    const wasAdded = await ethereum.request({
+      method: 'wallet_watchAsset',
+      params: {
+        type: 'ERC20', // Initially only supports ERC20, but eventually more!
+        options: {
+          address: tokenAddress, // The address that the token is at.
+          symbol: tokenSymbol, // A ticker symbol or shorthand, up to 5 chars.
+          decimals: tokenDecimals, // The number of decimals in the token
+          image: tokenImage, // A string url of the token logo
+        },
+      },
+    });
+    if (wasAdded) {
+      console.log('Thanks for your interest!');
+    }
+  } catch (error) {
+    console.log(error);
+  }
+}
+</script>
+</head>
+<body>
+  <div class="notice-bar">
+    <div class="container w-container">
+      <div class="notice-bar-content"><img src="images/hFzKAApJ_400x400.jpg" loading="lazy" id="w-node-bff771df-48db-a082-6d14-5cf77804919d-7804919a" width="40" alt="" class="image-2">
+        <div id="w-node-bff771df-48db-a082-6d14-5cf77804919e-7804919a">Follow us on Twitter for updates</div>
+        <a id="w-node-bff771df-48db-a082-6d14-5cf7780491a2-7804919a" href="http://twitter.com/ubidoteth" target="_blank" class="tiny-button w-button">Follow UBI</a>
+      </div>
+    </div>
+  </div>
+  <div data-animation="default" data-collapse="medium" data-duration="100" data-easing="ease" data-easing2="ease" role="banner" class="navbar w-nav">
+    <div class="container w-container">
+      <div class="navbar-conents">
+        <div id="w-node-_5ce72d31-a5f6-4353-b128-451396d45f0d-96d45f0a" class="navbar-left">
+          <a href="index.html" aria-current="page" class="brand w-nav-brand w--current"><img src="images/ubi_logo-name.png" loading="lazy" width="150" srcset="images/ubi_logo-name-p-500.png 500w, images/ubi_logo-name-p-800.png 800w, images/ubi_logo-name-p-1080.png 1080w, images/ubi_logo-name-p-1600.png 1600w, images/ubi_logo-name-p-2000.png 2000w, images/ubi_logo-name-p-2600.png 2600w, images/ubi_logo-name-p-3200.png 3200w" sizes="(max-width: 479px) 100vw, 150px" alt=""></a>
+        </div>
+        <nav role="navigation" id="w-node-_5ce72d31-a5f6-4353-b128-451396d45f10-96d45f0a" class="nav-menu w-nav-menu">
+          <div data-hover="true" data-delay="300" data-w-id="5ce72d31-a5f6-4353-b128-451396d45f11" class="dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div>DAO</div><img src="images/Dropdown-icon.svg" loading="lazy" alt="" class="dropdown-icon">
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <a href="http://gov.ubi.eth.limo" target="_blank" class="dropdown-link w-dropdown-link">Forum</a>
+              <a href="https://snapshot.org/#/ubi-voting.eth" target="_blank" class="dropdown-link w-dropdown-link">Snapshot</a>
+              <a href="https://twitter.com/ubidoteth" target="_blank" class="dropdown-link w-dropdown-link">Twitter</a>
+            </nav>
+          </div>
+          <div data-hover="true" data-delay="300" data-w-id="5ce72d31-a5f6-4353-b128-451396d45f1d" class="dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div>Community</div><img src="images/Dropdown-icon.svg" loading="lazy" alt="" class="dropdown-icon">
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <div class="stacked-dropdown">
+                <div>
+                  <a href="https://t.me/ubidaoes" target="_blank" class="dropdown-link w-dropdown-link">Spanish</a>
+                  <a href="https://t.me/ubidaoen" target="_blank" class="dropdown-link w-dropdown-link">English</a>
+                  <a href="https://t.me/UBIPD" target="_blank" class="dropdown-link w-dropdown-link">Price</a>
+                </div>
+              </div>
+            </nav>
+          </div>
+          <div data-hover="true" data-delay="300" data-w-id="5ce72d31-a5f6-4353-b128-451396d45f49" class="dropdown w-dropdown">
+            <div class="dropdown-toggle w-dropdown-toggle">
+              <div>Code</div><img src="images/Dropdown-icon.svg" loading="lazy" alt="" class="dropdown-icon">
+            </div>
+            <nav class="dropdown-list w-dropdown-list">
+              <a href="https://github.com/DemocracyEarth/ubi" target="_blank" class="dropdown-link w-dropdown-link">Github</a>
+              <a href="https://github.com/DemocracyEarth/ubi/tree/master/docs/logo" target="_blank" class="dropdown-link w-dropdown-link">Logos</a>
+            </nav>
+          </div>
+          <a href="#" class="green-button nav _1 w-button">Purchase template</a>
+        </nav>
+        <div id="w-node-_5ce72d31-a5f6-4353-b128-451396d45f58-96d45f0a" class="regular-navbar-right">
+          <a href="http://gov.ubi.eth.limo" target="_blank" class="nav-link">Join the DAO</a>
+          <a href="https://proofofhumanity.org" target="_blank" class="green-button nav w-button">Get UBI</a>
+          <div class="menu-button w-nav-button"><img src="images/hamburger.svg" loading="lazy" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="big-section wf-section">
+    <div class="container w-container">
+      <div class="center-content center-text">
+        <div class="hero-notif"><img src="images/Small-line.svg" loading="lazy" alt="">
+          <div class="horizontal-content">
+            <div>Get UBI from Dexes 🦄</div>
+            <a href="https://www.coinbase.com/how-to-buy/universal-basic-income" target="_blank">Learn more</a>
+          </div>
+        </div>
+        <h1>Universal Basic Income <br>for <span class="clipped-green-text">Humanity</span></h1>
+        <div class="large-text">UBI 💧 is a cryptocurrency that streams to verified humans on Ethereum.</div>
+        <div class="button-stack space-top-small">
+          <a href="https://proofofhumanity.org" target="_blank" class="green-webflow-button w-inline-block"><img src="images/ubi_logo_black.svg" loading="lazy" width="24" alt="">
+            <div>Verify as Human</div>
+          </a>
+          <a href="addToMetamask()" class="transparent-button big w-button">Add UBI 💧 to Wallet</a>
+        </div>
+      </div>
+    </div><img src="images/Hero-left-gradient.png" loading="lazy" srcset="images/Hero-left-gradient-p-500.png 500w, images/Hero-left-gradient.png 551w" sizes="(max-width: 479px) 100vw, 500px" alt="" class="top-left"><img src="images/Hero-right-gradient.png" loading="lazy" srcset="images/Hero-right-gradient-p-500.png 500w, images/Hero-right-gradient.png 572w" sizes="(max-width: 479px) 100vw, 440px" alt="" class="top-right">
+  </div>
+  <div class="logos-section wf-section">
+    <div class="container small w-container">
+      <h5 class="center-text">Trusted by leading DAOs</h5>
+      <div class="marquee-wrapper space-top-small">
+        <div class="marquee-wide-element">
+          <div class="marquee-single-element">
+            <div class="marquee-grid">
+              <div id="w-node-d07fc314-c67c-f6f3-57e5-cc621873d37b-419e84df" class="marquee-logo-wrap">
+                <a href="https://democracy.earth" target="_blank" class="w-inline-block"><img src="images/democracyearth-logo-2021-white.png" loading="lazy" srcset="images/democracyearth-logo-2021-white-p-500.png 500w, images/democracyearth-logo-2021-white-p-800.png 800w, images/democracyearth-logo-2021-white-p-1080.png 1080w, images/democracyearth-logo-2021-white-p-1600.png 1600w, images/democracyearth-logo-2021-white-p-2000.png 2000w, images/democracyearth-logo-2021-white-p-2600.png 2600w" height="" sizes="(max-width: 479px) 100vw, (max-width: 991px) 152px, 200px" alt=""></a>
+              </div>
+              <div id="w-node-d07fc314-c67c-f6f3-57e5-cc621873d37d-419e84df" class="marquee-logo-wrap">
+                <a href="https://proofofhumanity.org/" target="_blank" class="w-inline-block"><img src="images/WZQnpFk4.png" loading="lazy" srcset="images/WZQnpFk4-p-500.png 500w, images/WZQnpFk4-p-800.png 800w, images/WZQnpFk4.png 1282w" height="40" sizes="111.71875px" alt=""></a>
+              </div>
+              <div id="w-node-d07fc314-c67c-f6f3-57e5-cc621873d37f-419e84df" class="marquee-logo-wrap">
+                <a href="https://www.proofofintegrity.org/" target="_blank" class="w-inline-block"><img src="images/proof-of-integrity.png" loading="lazy" alt=""></a>
+              </div>
+              <div id="w-node-d07fc314-c67c-f6f3-57e5-cc621873d381-419e84df" class="marquee-logo-wrap">
+                <a href="https://kleros.io/" target="_blank" class="w-inline-block"><img src="images/kleros-logo-fullwhite.png" loading="lazy" srcset="images/kleros-logo-fullwhite-p-500.png 500w, images/kleros-logo-fullwhite.png 959w" height="40" sizes="106.5546875px" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div style="padding-top:56.17021276595745%" class="w-video w-embed"><iframe class="embedly-embed" src="https://cdn.embedly.com/widgets/media.html?src=https%3A%2F%2Fwww.youtube.com%2Fembed%2FPWFNi0ggUdU%3Ffeature%3Doembed&display_name=YouTube&url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DPWFNi0ggUdU&image=https%3A%2F%2Fi.ytimg.com%2Fvi%2FPWFNi0ggUdU%2Fhqdefault.jpg&key=96f1f04c5f4143bcb0f2e68c87d65feb&type=text%2Fhtml&schema=youtube" scrolling="no" allowfullscreen="" title="Register your profile without errors - Proof of Humanity"></iframe></div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="center-content center-text">
+        <div class="limit">
+          <h2 class="large-section-heading">UBI Ecosystem</h2>
+          <div class="large-text">It&#x27;s very easy to build decentralized applications that burn 🔥 UBI tokens.</div>
+        </div>
+      </div>
+      <div class="split compact space-top-medium">
+        <div id="w-node-fd8ad18e-14cf-020b-8159-b855b17a1b98-419e84df" class="split-card">
+          <div id="w-node-_97681859-3ec7-37b0-3c3b-caa2f066c40f-419e84df" class="split-card-content">
+            <div>
+              <h2>UBI Burner</h2>
+              <div>Connect your smart contract to the UBI Burner and make Dapps that make Universal Basic Income a reality. Top burners get ranked on the leaderboard.</div>
+            </div>
+            <a href="https://ubiburner.com/" target="_blank" class="green-webflow-button w-inline-block"><img src="images/ubi_logo_black.svg" loading="lazy" height="19" alt="">
+              <div>Learn More</div>
+            </a>
+          </div>
+          <div id="w-node-_3c0d7a44-5775-7322-9a0b-fd543c607b98-419e84df" class="split-card-image"></div>
+        </div>
+        <div id="w-node-_2fd81cad-dd86-45ea-e57a-5cd90660b790-419e84df" class="split-card">
+          <div id="w-node-_2fd81cad-dd86-45ea-e57a-5cd90660b791-419e84df" class="split-card-content">
+            <div>
+              <h2>Prode.eth</h2>
+              <div>Check Prode.eth, a decentralized sport bets marketplace that allocates 3% of the prize pool to buy and burn UBI tokens using the UBI burner.</div>
+            </div>
+            <a href="https://prode.market/" target="_blank" class="green-webflow-button w-inline-block"><img src="images/ubi_logo_black.svg" loading="lazy" height="19" alt="">
+              <div>Learn More</div>
+            </a>
+          </div>
+          <div id="w-node-fe5592f9-f932-b141-8eda-0fd999a0aabb-419e84df" class="split-card-image _2"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="split">
+        <div id="w-node-_7071cb0e-3e66-8c64-ce67-6f5259c4bf60-419e84df" class="limit">
+          <h5 class="green-text">Join the governance forum.</h5>
+          <h2>Propose your ideas to the community.</h2>
+          <div class="large-text">In our governance forum you can propose ideas to improve UBI and engage with other users to build a marketplace.</div>
+          <div class="content-integration-icons"><img src="images/luminous-Color-icon.svg" loading="lazy" alt=""><img src="images/Network-Color-icon.svg" loading="lazy" alt=""><img src="images/Sitemark-Color-icon.svg" loading="lazy" alt=""></div>
+          <a href="http://gov.ubi.eth.limo" target="_blank" class="underlined-arrow-link w-inline-block">
+            <div>Check the governance forum</div><img src="images/Arrow-right.svg" loading="lazy" alt="">
+          </a>
+        </div>
+        <div id="w-node-cea2b824-1b24-f85b-e602-868ff2422be7-419e84df" class="graphic-wrapper"><img src="images/Screen-Shot-2022-09-06-at-6.42.40-PM.png" loading="lazy" width="419" srcset="images/Screen-Shot-2022-09-06-at-6.42.40-PM-p-500.png 500w, images/Screen-Shot-2022-09-06-at-6.42.40-PM-p-800.png 800w, images/Screen-Shot-2022-09-06-at-6.42.40-PM-p-1080.png 1080w, images/Screen-Shot-2022-09-06-at-6.42.40-PM-p-1600.png 1600w, images/Screen-Shot-2022-09-06-at-6.42.40-PM-p-2000.png 2000w, images/Screen-Shot-2022-09-06-at-6.42.40-PM.png 2252w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 82vw, (max-width: 991px) 419px, 39vw" alt=""></div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="split">
+        <div id="w-node-f51f9d11-c215-72aa-b9e8-20e3d3fce4a7-419e84df" class="graphic-wrapper"><img src="images/ubi-snapshot.png" loading="lazy" width="419" srcset="images/ubi-snapshot-p-500.png 500w, images/ubi-snapshot-p-800.png 800w, images/ubi-snapshot-p-1080.png 1080w, images/ubi-snapshot-p-1600.png 1600w, images/ubi-snapshot-p-2000.png 2000w, images/ubi-snapshot.png 2252w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 82vw, (max-width: 991px) 419px, 39vw" alt=""></div>
+        <div id="w-node-f51f9d11-c215-72aa-b9e8-20e3d3fce498-419e84df" class="limit">
+          <h5 class="green-text">Vote the best proposals.</h5>
+          <h2>Vote on the DAO.</h2>
+          <div class="large-text">UBI as a governance token uses Quadratic Voting to mitigate the influence of whales.</div>
+          <div class="horizontal-feature mobile-side space-top-small">
+            <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-77hDlnibqiKC-96-000000-1_1icons8-Plumpy-77hDlnibqiKC-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+            <div>
+              <h4>Snapshot Voting</h4>
+              <div class="opacity-text">Voting costs zero gas and is enforced using a Kleros Governor smart contract.</div>
+            </div>
+          </div>
+          <a href="https://snapshot.org/#/ubi-voting.eth" target="_blank" class="transparent-button big w-button">Snapshot</a>
+          <a href="https://governor.kleros.io/UBI" target="_blank" class="transparent-button big w-button">Governor</a>
+        </div>
+      </div>
+    </div><img src="images/Left-gradients.png" loading="lazy" srcset="images/Left-gradients-p-500.png 500w, images/Left-gradients.png 614w" sizes="(max-width: 479px) 100vw, 500px" alt="" class="top-left">
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="split">
+        <div id="w-node-_7392a61c-c971-0055-c2c6-86df38f9388a-419e84df" class="green-block">
+          <h3>“Automation will cause rising inequality so we should consider UBI”</h3>
+          <div class="portrait-wrap"><img src="images/L86xyLF4_400x400.jpg" loading="lazy" width="50" alt="" class="image">
+            <div>
+              <div>Vitalik Buterin</div>
+              <div class="opacity-black-text">Ethereum Founder &amp; UBI Whale</div>
+            </div>
+          </div>
+          <div class="green-block-image-wrap">
+            <a href="https://etherscan.io/token/0xdd1ad9a21ce722c151a836373babe42c868ce9a4?a=0xab5801a7d398351b8be11c439e05c5b3259aec9b" target="_blank" class="w-inline-block"><img src="images/Screen-Shot-2022-09-06-at-7.01.42-PM.png" loading="lazy" width="450" srcset="images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-500.png 500w, images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-800.png 800w, images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-1080.png 1080w, images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-1600.png 1600w, images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-2000.png 2000w, images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-2600.png 2600w, images/Screen-Shot-2022-09-06-at-7.01.42-PM-p-3200.png 3200w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 83vw, (max-width: 991px) 440px, 37vw" alt="The day Vitalik burned 50 ETH worth of UBI" class="image-3"></a>
+          </div>
+        </div>
+        <div id="w-node-_1635b98e-4770-0df7-6f52-40b85087f067-419e84df" class="vertical-reviews">
+          <div class="vertical-review"><img src="images/Green-stars.svg" loading="lazy" alt="">
+            <div class="quote-text">&quot;UBI is the first token that can stream itself and save gas to users&quot;</div>
+            <div>Santiago Siri <span class="opacity-white">- Democracy Earth Founder</span></div>
+          </div>
+          <div class="vertical-review"><img src="images/Green-stars.svg" loading="lazy" alt="">
+            <div class="quote-text">&quot;The work of the UBI Vaults will someday win the Nobel Prize in Economics.&quot;</div>
+            <div>Federico Ast <span class="opacity-white">- Kleros CEO</span></div>
+          </div>
+          <div class="vertical-review"><img src="images/Green-stars.svg" loading="lazy" alt="">
+            <div class="quote-text">“<strong>UBI</strong> should be a stream of funds no one controls, it just happens.”</div>
+            <div>Pia Mancini <span class="opacity-white">- Open Collective CEO</span></div>
+          </div>
+          <div>To learn more follow us <a href="https://twitter.com/ubidoteth" target="_blank">here.</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="center-content center-text">
+        <div class="limit"><img src="images/Subheading-line.svg" loading="lazy" alt="">
+          <h2 class="space-top-tiny">Ending Poverty.</h2>
+          <div class="large-text">UBI helps to level up the playing field for everyone in the world.</div>
+        </div>
+      </div>
+      <div class="four-column-grid space-top-medium">
+        <div id="w-node-_33a89f66-29ad-5aa7-20eb-b1edf7adb58b-419e84df" class="center-content center-text">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-77hDlnibqiKC-96-000000-1_1icons8-Plumpy-77hDlnibqiKC-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Borderless</h4>
+          <div class="opacity-text">It doesn&#x27;t matter where you were born. UBI can be accessed everywhere.<br></div>
+        </div>
+        <div id="w-node-f26b7a46-2479-fb3d-9c2b-6b4edccc9867-419e84df" class="center-content center-text">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-AdZ21McLt6YJ-96-000000-1_1icons8-Plumpy-AdZ21McLt6YJ-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Humanity First</h4>
+          <div class="opacity-text">No legal documents or identifiable information is required.</div>
+        </div>
+        <div id="w-node-_7567bbc6-a162-a480-e3c2-163c246a3d67-419e84df" class="center-content center-text">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-OI6BowItHaZ4-96-000000-1_1icons8-Plumpy-OI6BowItHaZ4-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Democratic</h4>
+          <div class="opacity-text">Our DAO uses Quadratic Voting to mitigate the influence of whales.</div>
+        </div>
+        <div id="w-node-_9f522b41-e7ee-5da2-a73c-368f3f4f73d2-419e84df" class="center-content center-text">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-tgKFpvPBTLey-96-000000-1_1icons8-Plumpy-tgKFpvPBTLey-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Open Source</h4>
+          <div class="opacity-text">Developed in the open by a legendary team of developers.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="block-cta">
+        <div class="block-cta-content">
+          <div class="limit">
+            <h5 class="green-text">The UBI Burning Vaults</h5>
+            <h2>Burn 🔥 UBI with the defi yield of your ETH.</h2>
+            <div class="large-text">The integration of UBI with Yearn Finance allows to use the generated yield to burn UBI while you make a profit.</div>
+            <div class="button-stack space-top-small">
+              <a href="https://app.democracy.earth/" target="_blank" class="green-webflow-button w-inline-block"><img src="images/w.svg" loading="lazy" alt="">
+                <div>UBI WETH Vault</div>
+              </a>
+              <a href="https://app.democracy.earth/#/vault/ubi-dai" target="_blank" class="transparent-button big w-button">UBI DAI Vault</a>
+            </div>
+            <div class="content-integration-icons more-space-top"><img src="images/luminous-Color-icon.svg" loading="lazy" alt=""><img src="images/Network-Color-icon.svg" loading="lazy" alt=""><img src="images/Sitemark-Color-icon.svg" loading="lazy" alt=""></div>
+            <a href="https://etherscan.io/token/0xdd1ad9a21ce722c151a836373babe42c868ce9a4#balances" target="_blank" class="underlined-arrow-link w-inline-block">
+              <div>Top UBI holders on Etherscan</div><img src="images/Arrow-right.svg" loading="lazy" alt="">
+            </a>
+          </div>
+        </div><img src="images/ubi-vaults-plane.png" loading="lazy" id="w-node-f24fdeff-e1bd-fc57-f82f-2b92409f4d72-419e84df" width="551" sizes="(max-width: 479px) 100vw, (max-width: 767px) 92vw, (max-width: 991px) 551px, 43vw" srcset="images/ubi-vaults-plane-p-500.png 500w, images/ubi-vaults-plane-p-800.png 800w, images/ubi-vaults-plane.png 840w" alt="">
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div>
+        <div class="limit">
+          <h2>No one left behind.</h2>
+          <div class="large-text">UBI cannot be censored by governments and is accessible to every human in the world.</div>
+        </div>
+      </div>
+      <div class="three-column-grid space-top-medium">
+        <div id="w-node-_604a347f-a261-1ed9-0967-1485d875ca71-419e84df" class="card-feature">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-77hDlnibqiKC-96-000000-1_1icons8-Plumpy-77hDlnibqiKC-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Built with Ethereum</h4>
+          <div class="opacity-text">UBI is an ERC20 token can can be composed with every Ethereum smart contract.</div>
+        </div>
+        <div id="w-node-_807995c2-7eb9-13d5-1bf6-7506d619236b-419e84df" class="card-feature">
+          <div class="circle-icon-wrap white"><img src="images/icons8-Plumpy-OI6BowItHaZ4-96-000000-1_1icons8-Plumpy-OI6BowItHaZ4-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Democratic Governance</h4>
+          <div class="opacity-text">UBI uses Quadratic Voting to mitigate the disproportionate influence of whales.</div>
+        </div>
+        <div id="w-node-_98a27d3f-bde7-f461-f48d-2b9fb7b63fcc-419e84df" class="card-feature">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-VreP1KFWExGM-96-000000-1_1icons8-Plumpy-VreP1KFWExGM-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Censorship Resistant</h4>
+          <div class="opacity-text">Neither dictatorships nor large corporations can stop people from receiving their UBI.</div>
+        </div>
+        <div id="w-node-_42b607c3-0586-7b35-a4de-5d2b62c7dcc9-419e84df" class="card-feature">
+          <div class="circle-icon-wrap white"><img src="images/icons8-Plumpy-AdZ21McLt6YJ-96-000000-1_1icons8-Plumpy-AdZ21McLt6YJ-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Real Time Money</h4>
+          <div class="opacity-text">Ethereum compatible wallets can update your UBI balance in real time. </div>
+        </div>
+        <div id="w-node-_55f9e5b9-29c5-b5c6-5264-0d807b406088-419e84df" class="card-feature">
+          <div class="circle-icon-wrap"><img src="images/icons8-Plumpy-T4zuCdQj9cg7-96-000000-1_1icons8-Plumpy-T4zuCdQj9cg7-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Web3 Compatible</h4>
+          <div class="opacity-text">UBI is expanding towards Layer 2 networks, making it more efficient to transact and use.</div>
+        </div>
+        <div id="w-node-f176a053-6271-bb18-6e89-df44df173f95-419e84df" class="card-feature">
+          <div class="circle-icon-wrap white"><img src="images/icons8-Plumpy-tgKFpvPBTLey-96-000000-1_1icons8-Plumpy-tgKFpvPBTLey-96-000000-1.png" loading="lazy" width="32" alt=""></div>
+          <h4 class="space-top-tiny">Open Source</h4>
+          <div class="opacity-text">Built by independent developers free from legacy organizations.</div>
+        </div>
+      </div>
+    </div><img src="images/Hero-left-gradient.png" loading="lazy" srcset="images/Hero-left-gradient-p-500.png 500w, images/Hero-left-gradient.png 551w" sizes="(max-width: 479px) 100vw, 500px" alt="" class="top-left">
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="center-content center-text">
+        <div class="center-content limit-large"><img src="images/Subheading-line.svg" loading="lazy" alt="">
+          <h2 class="space-top-tiny">Join the <span class="clipped-green-text">Universal Basic Income movement today!</span></h2>
+          <div class="large-text">UBI works without the need of governments and legacy organizations.</div>
+          <div class="button-stack space-top-small">
+            <a href="https://www.coinbase.com/how-to-buy/universal-basic-income" target="_blank" class="green-webflow-button w-inline-block"><img src="images/ubi_logo_black.svg" loading="lazy" width="19" alt="">
+              <div>Buy UBI</div>
+            </a>
+            <a href="http://gov.ubi.eth.limo" target="_blank" class="transparent-button big w-button">Join the DAO</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wf-section">
+    <div class="container w-container">
+      <div class="marquee-wrapper">
+        <div class="marquee-wide-element _2">
+          <div class="marquee-single-element">
+            <div class="marquee-grid _2">
+              <div id="w-node-_180dadff-d742-5299-537f-90932b2893b6-2b2893b0" class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>ERC-20 compatible token</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Gasless accrual in Real Time</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Sybil resistant issuance</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Extensible architecture</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Built by indie developers</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Multipurpose theme, build with it whatever you like!</div>
+              </div>
+            </div>
+          </div>
+          <div class="marquee-single-element">
+            <div class="marquee-grid _2">
+              <div id="w-node-ec4d778c-85e5-ece6-c8d0-814c2708f7c6-2b2893b0" class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>3 Unique landing pages</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Figma file available with purchase</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Multipurpose theme, build with it whatever you like!</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>3 Unique landing pages</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Figma file available with purchase</div>
+              </div>
+              <div class="checked-feature-wrap"><img src="images/Green-check.svg" loading="lazy" alt="">
+                <div>Multipurpose theme, build with it whatever you like!</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="marquee-gradient"></div>
+        <div class="marquee-gradient right"></div>
+      </div>
+    </div>
+  </div>
+  <div class="section wf-section">
+    <div class="container w-container">
+      <div class="footer-grid">
+        <div id="w-node-_0771cab8-383b-17d2-ab59-571ecd595e3b-cd595e38" class="footer-link-column">
+          <h5 class="no-space-bottom">DAO</h5>
+          <a href="http://gov.ubi.eth.limo" target="_blank" class="footer-link">Governance Forum</a>
+          <a href="https://snapshot.org/#/ubi-voting.eth" target="_blank" class="footer-link">Snapshot Votes</a>
+          <a href="https://twitter.com/ubidoteth" target="_blank" class="footer-link">Twitter</a>
+          <a href="https://twitter.com/daily_ubi_bot" target="_blank" class="footer-link">Price Alerts</a>
+        </div>
+        <div id="w-node-_0771cab8-383b-17d2-ab59-571ecd595e4a-cd595e38" class="footer-link-column">
+          <h5 class="no-space-bottom">Community</h5>
+          <a href="https://t.me/ubidaoes" target="_blank" class="footer-link">Telegram Spanish</a>
+          <a href="https://t.me/ubidaoen" target="_blank" class="footer-link">Telegram English</a>
+          <a href="https://t.me/UBIprecioenespanol" target="_blank" class="footer-link">Price Channel 🇪🇸</a>
+          <a href="https://t.me/UBIPD" target="_blank" class="footer-link">Price Channel 🇬🇧</a>
+        </div>
+        <div id="w-node-_0771cab8-383b-17d2-ab59-571ecd595e59-cd595e38" class="footer-link-column">
+          <h5 class="no-space-bottom">Code</h5>
+          <a href="https://github.com/DemocracyEarth/ubi" target="_blank" class="footer-link">Github Repo</a>
+          <a href="https://github.com/DemocracyEarth/ubi/tree/master/docs/logo" class="footer-link">Logos</a>
+        </div>
+        <div id="w-node-_0771cab8-383b-17d2-ab59-571ecd595e68-cd595e38" class="social-logos-wrap">
+          <a href="https://github.com/DemocracyEarth/ubi" target="_blank" class="social-logo w-inline-block"><img src="images/25231.png" loading="lazy" height="20" alt=""></a>
+          <a href="https://snapshot.org/#/ubi-voting.eth" target="_blank" class="social-logo w-inline-block"><img src="images/noun-lightning-1187996.svg" loading="lazy" height="20" alt=""></a>
+          <a href="https://t.me/ubidaoen" target="_blank" class="social-logo w-inline-block"><img src="images/telegram-xxl.png" loading="lazy" width="Auto" height="16" alt=""></a>
+          <a href="https://twitter.com/ubidoteth" target="_blank" class="social-logo w-inline-block"><img src="images/twitter-1.svg" loading="lazy" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-newsletter-bottom">
+        <a href="index.html" aria-current="page" class="w-inline-block w--current"><img src="images/ubi_logo-name.png" loading="lazy" width="100" srcset="images/ubi_logo-name-p-500.png 500w, images/ubi_logo-name-p-800.png 800w, images/ubi_logo-name-p-1080.png 1080w, images/ubi_logo-name-p-1600.png 1600w, images/ubi_logo-name-p-2000.png 2000w, images/ubi_logo-name-p-2600.png 2600w, images/ubi_logo-name-p-3200.png 3200w" sizes="(max-width: 479px) 100vw, 100px" alt=""></a>
+      </div>
+    </div><img src="images/Bottom-corner-gradient.png" loading="lazy" width="807.5" srcset="images/Bottom-corner-gradient-p-500.png 500w, images/Bottom-corner-gradient-p-800.png 800w, images/Bottom-corner-gradient-p-1080.png 1080w, images/Bottom-corner-gradient-p-1600.png 1600w, images/Bottom-corner-gradient.png 1615w" sizes="(max-width: 991px) 100vw, 807.5px" alt="" class="bottom-right">
+  </div>
+  <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=6315f68f8497f0d90e9e84a8" type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="js/webflow.js" type="text/javascript"></script>
+  <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+</body>
+</html>
